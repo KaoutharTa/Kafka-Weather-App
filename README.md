@@ -33,6 +33,8 @@ Station2: Average Temperature = 37.5°F, Average Humidity = 47.5% Station1: Aver
 - **KStream & KGroupedStream**: For reading and grouping data.
 - **Serialization**: Ensures correct data format handling.
 - **Shutdown Hook**: To gracefully stop the application.
+![Picture1](./Pictures/Picture1.png)
+![Picture2](./Pictures/Picture2.png)
 
 ## Conclusion
 The Kafka Streams application efficiently filters, transforms, and aggregates weather data, providing real-time insights into the weather conditions of each station.
