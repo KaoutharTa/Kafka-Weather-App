@@ -7,8 +7,6 @@ This project involves creating a Kafka Streams application to process real-time 
 Each message in the "weather-data" topic follows the format:
 station,temperature,humidity
 
-sql
-Copier le code
 
 ## Steps in the Application
 1. **Read Data**: The application reads weather data from the "weather-data" Kafka topic using a KStream.
@@ -16,8 +14,7 @@ Copier le code
 3. **Convert to Fahrenheit**: Temperatures in Celsius are converted to Fahrenheit using the formula:
 Fahrenheit = (Celsius × 9/5) + 32
 
-vbnet
-Copier le code
+
 4. **Group by Station**: The data is grouped by station to calculate the average temperature and humidity for each station.
 5. **Publish Results**: Aggregated results are written to the "station-averages" topic.
 
@@ -26,14 +23,10 @@ Copier le code
 ### Input:
 Station1,25.3,60 Station2,35.0,50 Station2,40.0,45 Station1,32.0,70
 
-shell
-Copier le code
 
 ### Output:
 Station2: Average Temperature = 37.5°F, Average Humidity = 47.5% Station1: Average Temperature = 31.65°F, Average Humidity = 65%
 
-markdown
-Copier le code
 
 ## Tools and Concepts Used
 - **Kafka Streams**: For real-time data processing.
